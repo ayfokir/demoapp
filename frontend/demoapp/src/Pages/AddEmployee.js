@@ -9,6 +9,7 @@ function AddEmployee ()
 
   const handleSubmit = (e) =>
   {
+    
     e.preventDefault();
  const data = {
       first_name: firstName,
