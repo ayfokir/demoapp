@@ -30,7 +30,7 @@ function Login ()
     // Save the response from the server in the state variable
     response.then(res => res.json())
       .then( data =>
-      {
+      {  
         console.log(data)
         setResponseMessage(data.response.message)
         if (data.status === "success") {
