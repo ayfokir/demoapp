@@ -29,7 +29,7 @@ app.post("/add-employee", (req, res) => {
 
   connection.query( sql, [ first_name, last_name, email, password ], ( err, result ) =>
   {  
-    if ( err )  
+    if ( err )    
     {
       console.log(err.message)
       res.status(500).json({message : "database connection error"})
